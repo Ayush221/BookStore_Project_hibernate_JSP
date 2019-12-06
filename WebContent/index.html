@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+    <head>
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    </head>
+    <body>
+
+        <header>
+                <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                        <a class="navbar-brand" href="#"> More's BookStore</a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                          <span class="navbar-toggler-icon"></span>
+                        </button>
+                      
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                          <ul class="navbar-nav ml-auto">
+                            <li class="nav-item active">
+                              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item active">
+                              <a class="nav-link" href="books.jsp">Books</a>
+                            </li>
+                            
+                            
+                          
+                           <li>
+                         <button type="button" class="btn-success" data-toggle="modal" data-target="#myModal">
+                            User Login
+                          </button>
+                         
+                          <!-- The Modal -->
+                          <div class="modal" id="myModal">
+                            <div class="modal-dialog">
+                              <div class="modal-content">
+                          
+                                <!-- Modal Header -->
+                                <div class="modal-header">
+                                  <h4 class="modal-title">User Login</h4>
+                                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                </div>
+                          
+                                <!-- Modal body -->
+                                <div class="modal-body">
+                                    <form action="login.jsp" method="post">
+                                      <div class="form-group">
+                                        <label for="Mobile">Mobile:</label>
+                                        <input type="number" class="form-control" placeholder="Enter number" name="mobileno">
+                                      </div>
+                                      <div class="form-group">
+                                        <label for="pwd">Password:</label>
+                                        <input type="password" class="form-control" placeholder="Enter password" name="password">
+                                      </div>
+                                      
+                                      <button type="submit" class="btn btn-primary">Login</button>
+                                    </form>
+                              
+                                </div>
+                          
+                                <!-- Modal footer -->
+                                <div class="modal-footer">
+                                  <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                                </div>
+                          
+                              </div>
+                            </div>
+                          </div>
+                          </li>
+                          <li class="nav-item active">
+                              <a class="nav-link " href="logout.jsp"><button class="btn-danger">Logout</button></a>
+                            </li>
+                          </ul>
+                        </div>
+                      </nav>
+
+                      <div id="demo" class="carousel slide" data-ride="carousel">
+
+                            <!-- Indicators -->
+                            <ul class="carousel-indicators">
+                              <li data-target="#demo" data-slide-to="0" class="active"></li>
+                              <li data-target="#demo" data-slide-to="1"></li>
+                              <li data-target="#demo" data-slide-to="2"></li>
+                            </ul>
+                            
+                            <!-- The slideShow -->
+                            <div class="carousel-inner">
+                              <div class="carousel-item active">
+                                <img src="img/book.jpg" alt="Los Angeles" width="1430" height="600">
+                              </div>
+                              <div class="carousel-item">
+                                <img src="img/book2.jpg" alt="Chicago" width="1430" height="600">
+                              </div>
+                              <div class="carousel-item">
+                                <img src="img/book3.jpg" alt="New York" width="1430" height="600">
+                              </div>
+                            </div>
+                            
+                            <!-- Left and right controls -->
+                            <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                              <span class="carousel-control-prev-icon"></span>
+                            </a>
+                            <a class="carousel-control-next" href="#demo" data-slide="next">
+                              <span class="carousel-control-next-icon"></span>
+                            </a>
+                          </div>
+        </header>
+
+        <section>
+          <div class="container-fluid">
+            <h1 class="text-center text-capitalize pt-5">About us</h1>
+            <hr class="w-25 mx-auto pt-5">
+
+            <div class="row mb-5" >
+              <div class="col-lg-6 col-md-6 col-12">
+                <img src="img/book4.jpg" class="img-fluid">
+              </div>
+              <div class="col-lg-6 col-md-6 col-12">
+                  <h1>About BookStore</h1>
+                  <hr class=" ">
+                  <p>Today, {pages} a bookstore is the place for book lovers of all ages, where reading, meeting and discussing books is a way of life. We offer a carefully curated selection of new fiction, non-fiction, children’s, cooking, surf, coffee table books and bestsellers. We are proud of our knowledgeable and caring staff who can match any reader with the perfect book.
+
+                      We regularly host author events and book signings, weekly story times, and four monthly book clubs.  {pages} provides complimentary gift wrap and gift cards are available for that hard to select for reader. {pages} a bookfair provides over 20 bookfairs annually working with each school to create the perfect celebration of books and literature while supporting school fundraising goals.
+                    </p>
+                   
+                </div>
+
+            </div>
+            </div>
+        </section>
+
+        <section class="bg-primary">
+        
+            <article class="py-5  ">
+              <div class="text-center">
+                <h3 class="display-4"> Register Below</h3>
+                <p>Be a part of my BookStore</p>
+                <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#myModal">Register Now</button>
+              </div>
+              <div class="modal fade" id="myModal">
+                  <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                    
+                      <!-- Modal Header -->
+                      <div class="modal-header">
+                        <h4 class="modal-title">Sign-Up</h4>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                      </div>
+                      
+                      <!-- Modal body -->
+                      <div class="modal-body">
+                          <form action="register.jsp" onsubmit=" return validation()" method="post">
+                      
+                           <div class="form-group">
+                              <label for="mobile">Mobile:</label>
+                              <input type="number"   name="mobileno" class="form-control" >
+                              <span id="span3" class="text-danger font-weight-bold"></span> 
+                            </div>
+                            <div class="form-group">
+                              <label for="pwd">Password:</label>
+                              <input type="password" class="form-control" name="password">
+                              <span id="span4" class="text-danger font-weight-bold"></span> 
+                            </div>
+                            <div class="form-group">
+                              <label for="email">Email address:</label>
+                              <input type="email" class="form-control" name="email"  required>
+                              <span id="span2" class="text-danger font-weight-bold"></span> 
+                            </div>
+                            
+                            <div class="form-group">
+                              <label for="address">Address:</label>
+                              <input type="text"   name="address" class="form-control" >
+                              
+                            </div>
+
+                            <div class="form-group">
+                              <label for="city">City:</label>
+                                <select  name="city" class="form-control" >
+                                <option>Lucknow</option>
+                                <option>Mumbai</option>
+                                <option>Pune</option>
+                                <option>Dallas</option>
+                                <option>Houston</option>
+                              </select>
+                            </div>
+
+                            <div class="form-group">
+                              <label for="pincode">PinCode:</label>
+                              <input type="number" name="pincode" class="form-control" >
+                              <span id="span5" class="text-danger font-weight-bold"></span> 
+                            </div>
+                
+                            <button type="submit" class="btn btn-primary" value="Register">Submit</button>
+                          </form>
+                      </div>
+                      
+                      <!-- Modal footer -->
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal" >Close</button>
+                      </div>
+                      
+                    </div>
+                  </div>
+                </div>
+                
+              
+            </article>
+          
+        </section>
+        
+        <script>
+        function validation()
+{
+
+var e=document.getElementById("email").value;
+var n=document.getElementById("mobileno").value;
+var p=document.getElementById("password").value;
+var pin=document.getElementById("pincode").value;
+
+
+
+if((n == "")||(n.length!=10))
+{
+document.getElementById("span3").innerHTML="** Please fill the number field or length should be 10 digits";
+return false;
+}
+// if((p.length<2)|| (p.length>20))
+// {
+// document.getElementById("span4").innerHTML="** Length should be more";
+// return false;
+// }
+if(pin.length!==6)
+ {
+ document.getElementById("span5").innerHTML="** Incorrect Pin";
+ return false;
+ }
+
+}
+        </script>
+    </body>
+</html>

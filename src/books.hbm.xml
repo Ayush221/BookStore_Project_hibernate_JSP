@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+    
+    <hibernate-mapping> 
+    <class name="com.book.Book" table="books" >  
+ 
+<id name="book_id" ><generator class="assigned"></generator> </id> 
+ <property name="book_name" type="string" lazy="false"></property>  
+ <property name="author" type="string" lazy="false"></property>  
+ <property name="price" lazy="false" ></property>
+ <property name="path" type="string" lazy="false"></property>
+ 
+ 
+ </class>  
+  </hibernate-mapping> 
